@@ -7,6 +7,14 @@ const plugins = [
   "gatsby-plugin-sharp",
   "gatsby-transformer-sharp",
   {
+    resolve: "gatsby-plugin-google-tagmanager",
+    options: {
+      id: "GTM-MQCG4NF",
+      includeInDevelopment: true,
+      enableWebVitalsTracking: true,
+    },
+  },
+  {
     resolve: "gatsby-source-filesystem",
     options: {
       name: "images",
